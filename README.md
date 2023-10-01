@@ -1,2 +1,2 @@
 # alx-system_engineering-devops
-Shell Basics and Permissions  return
+This is the repository for Shell basics and permissions tasks.
