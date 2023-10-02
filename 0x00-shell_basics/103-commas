@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -1Ap | tr '\n' ',' | sed 's/,$/\n/'
+ls -ampv --group-directories-first --ignore='[^[:alnum:]]'
