@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -ampv --group-directories-first --sort=extension --ignore='[^[:alnum:]]'
+ls -amp . .. [0-9]* [!0-9]* --ignore='[^[:alnum:]]'
