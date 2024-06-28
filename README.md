@@ -5,7 +5,7 @@ This project is a collectioni of scripts and code used to automate various syste
 
 ## Installation
 Clone the repository to your Local machine:
-git clone https://github.com/yourusername/alx-system_engineering-devops.git
+(git clone https://github.com/Coder3451/alx-system_engineering-devops.git)
 
 ## Usage
 Each script in the repository has a specific purpose. For example, to run the `check_status.sh` script, use:
