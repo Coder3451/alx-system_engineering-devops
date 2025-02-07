@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+# This script is displaying numbers from 1 to 20, but at the 4th loop iteration is displays 4 and then "bad luck from China", at the 9th loop iteration it dispalys 8 and then "bad luck from Japan, and at the 17th loop iteration it displays 17 and then "bad luck from Italy.
+
+count=1
+while [ $count -le 20 ]; do
+	case $count in
+		4) echo "$count"; echo "bad luck from China" ;;
+		8) echo "$count"; echo "bad luck from Japan" ;;
+		17) echo "$count"; echo "bad luck from Italy" ;;
+		*) echo "$count" ;;
+	esac
+	((count++))
+done
