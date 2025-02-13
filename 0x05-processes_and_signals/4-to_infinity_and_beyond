@@ -2,7 +2,7 @@
 # The script is displaying To infinity and beyond indefinitely.
 
 count=1
-while [ true ]; do
+while true; do
 	echo "To infinity and beyond"
 	sleep 2
 	((count++))
