@@ -3,7 +3,7 @@
 
 for pid in /proc/[0-9]*; do
 	pid_num=${pid##*/}
-	cmd=$(cat "$pid/cmdline" 2>/dev/null | tr '\0' ' ')
+	cmd=$(tr '\0' ' ' < "$pid/cmdline" 2>/dev/null)
 
 	if [[ "$cmd" == "bash" ]]; then
 		echo "$pid_num $cmd"
