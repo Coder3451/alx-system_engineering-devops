@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# This script is displaying numbers from 1 to 100, but it displays FizzBuzz, Fizz, Buzz when the number is a multiple of 3 and 5, when the number is multiple of 3, when the number is a mulitple of 5, respectively
+
+count=1
+while [ $count -le 100 ]; do
+	if (( $count%3 == 0 && $count%5 == 0 )); then
+		echo "FizzBuzz";
+	else
+		if (( $count%3 == 0 )); then
+			echo "Fizz"
+		elif (( $count%5 == 0 )); then
+			echo "Buzz"
+		else
+			echo "$count"
+		fi
+	fi
+	((count++))
+done
