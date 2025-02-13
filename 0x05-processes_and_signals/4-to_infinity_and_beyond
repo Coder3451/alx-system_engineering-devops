@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# The script is displaying To infinity and beyond indefinitely.
+
+count=1
+while [ true ]; do
+	echo "To infinity and beyond"
+	sleep 2
+	((count++))
+done
