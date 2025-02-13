@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# This script is stopping the process 4-to_infinity_and_process
+
+kill 1902
