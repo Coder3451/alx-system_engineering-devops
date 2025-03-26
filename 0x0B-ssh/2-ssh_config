@@ -1,0 +1,7 @@
+Host 52.55.89.88
+	HostName 530588-web-01
+	User ubuntu
+	Port 22
+	IdentityFile ~/.ssh/school
+	PreferredAuthentications publickey
+	PasswordAuthentication no
