@@ -7,4 +7,4 @@ docker run -p 8080:80 -d --name first_container alx/265-0
 
 sleep 3
 
-docker exec first_container apachectl status | grep "Apache Server Status" && echo "apache2 is running"
+docker exec first_container pgrep apache2 > /dev/null && echo "apache2 is running"
