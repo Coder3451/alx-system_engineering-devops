@@ -4,3 +4,7 @@
 docker build -t alx/265-0 .
 docker rm -f first_container
 docker run -p 8080:80 -d --name first_container alx/265-0
+
+sleep 3
+
+docker exec first_container apachectl status | grep "Apache Server Status" && echo "apache2 is running"
