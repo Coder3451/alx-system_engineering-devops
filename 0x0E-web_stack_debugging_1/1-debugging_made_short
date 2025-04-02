@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Make your Ubuntu container listen on port 80
+apt-get update
+apt-get install -y nginx
+service nginx start
+service nginx status
